@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(1, 12, 97, 0.982), rgb(15, 66, 194));
+  }
+
+.Layout {
+    display: flex; 
+    flex-direction: column;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    width: 50%; 
+}
+
+  .Title {
+    
+    text-align: center;
+    font-size: 2em;
+    color: rgb(1, 222, 251);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h2{
+    width: 50%;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(0, 181, 247);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .boxes{
+    width: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(0, 152, 253);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.button{
+  width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(0, 152, 253);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Figure{
+    
+}
+/* 
+created by David Oleksy 6/15/2022 */

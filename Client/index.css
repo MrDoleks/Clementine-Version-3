@@ -1,0 +1,141 @@
+/* HTML Styles */
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(1, 12, 38);
+  }
+  
+  hr {
+    margin: 0;
+    align-self: stretch;
+    margin-top: 5px;
+  }
+  
+  /* Custom Classes */
+  .Layout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttons{
+    display: flex;
+  }
+  
+  .buttons button {
+    flex-grow: 1;
+  }
+  
+  .Content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Header {
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(4, 25, 109) , rgb(21, 123, 248));
+    font-size: 2em;
+    color: rgb(0, 255, 255);
+    font-family:cursive
+  }
+  
+  .ContentLeft {
+    width: 900px;
+    height: 550px;
+    background-color:rgb(4, 25, 109);
+    background-image: linear-gradient(to left, rgb(6, 53, 182) , rgb(4, 25, 109));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". head ."
+    ". . ."
+    ". input .";
+  }
+  
+  .ContentRight {
+    width: 900px;
+    height: 550px;
+    background-color:rgb(4, 25, 109); /*for browsers that don't support gradient */
+    background-image: linear-gradient(to right, rgb(6, 53, 182) , rgb(21, 123, 248));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 10px;
+  }
+  
+  .Foot {
+    width: 100%;
+    font-size: 1em;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+  }
+  
+  .Subtitle {
+    font-size: 1.7em;
+    color: rgb(0, 242, 255);
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  .Credit {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(15, 31, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* For eyes in our layout */
+  .Head {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-area: head;
+    justify-self: left;
+    display: flex;
+    justify-content: space-around;
+    transform: scale(.5);
+  }
+  
+  .StackedDiv {
+    position: absolute;
+    top: 0;
+  }
+  
+  /* .Eyes {
+    margin-top: 15%;
+    transform: scale(0.75);
+  } */
+  
+  .Input {
+    grid-area: input;
+    justify-self: center;
+    color: rgb(7, 156, 255);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .InputBox {
+    height: 50px;
+    width: 400px;
+    font-size: 12pt;
+  }
+  
+  .Output {
+    margin-top: 15px;
+    color: rgb(7, 255, 255);
+    overflow: scroll;
+  }
+  
+/* Humanoid */
+  
+  .stage {
+    display: inline-block;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform: rotateY(0.01deg);
+  }
+  
+  /* created by David Oleksy 6/15/2022 */
